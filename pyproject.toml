@@ -1,9 +1,15 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "auto-research-report-generation"
 version = "0.1.0"
-description = "Add your description here"
+description = "Automated research report generation using LLMs"
 readme = "README.md"
 requires-python = ">=3.11"
+license = "LicenseRef-Proprietary"  # ✅ SPDX-compliant
+authors = [{ name = "klangat" }]
 dependencies = [
     "ipykernel>=6.30.1",
     "langchain-community>=0.3.31",
@@ -12,6 +18,10 @@ dependencies = [
     "langchain-groq==0.3.6",
     "langchain-openai==0.3.32",
     "langgraph>=0.6.8",
+    "structlog>=25.4.0",
     "tavily-python>=0.7.12",
     "wikipedia>=1.4.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["research_and_analyst"]
