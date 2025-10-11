@@ -1,7 +1,7 @@
 import importlib.metadata
 packages = [
     "langgraph",
-    "langchain_communtiy",
+    "langchain_community",
     "langchain_core",
     "tavily-python",
     "wikipedia"
