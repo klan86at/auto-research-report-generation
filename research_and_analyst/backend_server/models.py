@@ -45,7 +45,7 @@ class Analyst(BaseModel):
             f"Description: {self.description}"
         )
     
-    class Perspectives(BaseModel):
+class Perspectives(BaseModel):
         analysts: List[Analyst] = Field(
             description="Comprehensive list of analysts with their roles and affiliations"
         )
@@ -61,7 +61,7 @@ class SearchQuery(BaseModel):
 # State Classes for Graphs
 # -------------------------------
 
-class GebnerateAnalystsState(TypedDict):
+class GenerateAnalystsState(TypedDict):
     topic: str # Research topic
     max_analysts: int # Maximum number of analysts to generate
     human_analyst_feedback: str # Feedback from the human analyst
