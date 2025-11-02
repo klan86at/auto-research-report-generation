@@ -23,7 +23,7 @@ from research_and_analyst.schemas.models import (
 )
 from research_and_analyst.utils.model_loader import ModelLoader
 from research_and_analyst.workflows.interview_workflow import InterviewGraphBuilder
-from research_and_analyst.prompt_lib.prompts import (
+from research_and_analyst.prompt_lib.prompt_locator import (
     CREATE_ANALYSTS_PROMPT,
     INTRO_CONCLUSION_INSTRUCTIONS,
     REPORT_WRITER_INSTRUCTIONS,
